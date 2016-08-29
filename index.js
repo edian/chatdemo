@@ -4,6 +4,7 @@ var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
 var db = require('./test.js');
+//var db = require('sql.js');
 // app.get('/welcome', function(req, res){
 //   //res.send('<h1>Hello world</h1>');
 //   res.sendFile(__dirname + '/welcome.html');
