@@ -24,44 +24,18 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 var firstOn = {};
 
 app.get('/', function(req, res){
-  //res.send('<h1>Hello world</h1>');
-  /*var conn = db.connect();
-  var query = conn.query('select * from chatuser a order by a.time', function(err, rows,fields) {
-    if(err) throw err;
-    if(rows){
-      for(var i=0;i<rows.length;i++){
-       console.log(i,rows[i].username);
-      }
-    }
-  });
-  console.log(query.sql);
-  conn.end();
-
-*/
+  
   console.log(req.body);
-
- // if(req.cookies.user==null){
-  //	res.redirect('/welcome');
-  //}
-  //else
-  	res.sendFile(__dirname + '/index.html');
-  //res.redirect('/index');
+  res.sendFile(__dirname + '/index.html');
+  
 });
 app.post('/',function(req,res){
 	console.log(req.body.name);
-  /*var keyname = req.body.name;
-  if(firstOn.containsKey(keyname)){
-    firstOn.keyname++;
-  }
-  else
-    firstOn.keyname = 1;*/
 	res.sendFile(__dirname + '/index.html');
-	/*if(req.name){
-		res.redirect('/index');
-		
-	}*/
 
 });
+
+
 
 /*io.on('connection',function(socket){
 	console.log('a user connected');

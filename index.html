@@ -9,12 +9,13 @@
   <body>
     
     
-    <div style="margin-bottom:80px;">
+    
+    <div style="margin-bottom:120px;">
     <div class="list-group" id="pre_messages"></div>
     <div class="list-group" id="messages"></div>
    </div>
 
-    <div class="row navbar-fixed-bottom">
+    <div class="row navbar-fixed-bottom" style="margin-bottom:32px;">
      <form action="">
       <div class="col-lg-6">
         <div class="input-group">
@@ -25,13 +26,19 @@
           </span>
        <!-- </form>-->
         </div>
+        
       </div>
       </form>
     </div>
     
 
     
-    
+    <div class="row navbar-fixed-bottom">
+        
+         <button class="btn btn-primary btn-block" type="submit" onclick="window.history.back();window.location.reload();window.location.href=window.location.href;">Log out</button>
+      
+      
+    </div>
     <script src="https://cdn.socket.io/socket.io-1.2.0.js"></script>
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <script src="js.cookie.js"></script>
